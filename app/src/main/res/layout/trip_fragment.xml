@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/colorWhite"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.trip.TripFragment">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorLightBlue"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="4dp"
+        android:layout_margin="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputFrom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <EditText
+                    android:id="@+id/eTFrom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/from"
+                    android:text="Walldorf, Germany"
+                    android:focusable="false"
+                    android:enabled="false"
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintRight_toLeftOf="@id/vSeperator"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/inputFrom">
+
+                <EditText
+                    android:id="@+id/eTDate"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/departure_date"
+                    android:text="Oct 10, 2016"
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+
+            <View
+                android:id="@+id/vSeperator"
+                app:layout_constraintTop_toBottomOf="@id/inputFrom"
+                app:layout_constraintBottom_toTopOf="@id/inputTo"
+                app:layout_constraintLeft_toRightOf="@id/inputDate"
+                app:layout_constraintRight_toLeftOf="@id/inputTime"
+                android:background="@color/colorPrimary"
+                android:layout_width="1dp"
+                android:layout_height="40dp">
+            </View>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputTime"
+                android:layout_width="0dp"
+                android:paddingLeft="4dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/inputFrom"
+                app:layout_constraintLeft_toRightOf="@id/vSeperator"
+                app:layout_constraintRight_toRightOf="parent">
+
+                <EditText
+                    android:id="@+id/eTTime"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/time"
+                    android:text="8:00 AM"
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputTo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/inputDate">
+
+                <EditText
+                    android:id="@+id/eTTo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/to"
+                    android:focusable="false"
+                    android:drawableTint="@color/colorPrimary"
+                    android:drawableRight="@drawable/ic_swap_vert_black_24dp"
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

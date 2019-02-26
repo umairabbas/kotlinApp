@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/location_nav"
+    app:startDestination="@id/trip_fragment">
+
+    <fragment
+        android:id="@+id/trip_fragment"
+        android:label="Trip"
+        android:name="com.sample.test.view.trip.TripFragment"
+        tools:layout="@layout/trip_fragment">
+        <action
+            android:id="@+id/action_trip_to_address"
+            app:destination="@id/address_fragment"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/exit_to_right"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/address_fragment"
+        android:label="Address"
+        android:name="com.sample.test.view.address.AddressFragment"
+        tools:layout="@layout/address_fragment">
+        <action
+            android:id="@+id/action_address_to_trip"
+            app:destination="@id/trip_fragment"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/exit_to_right"/>
+    </fragment>
+
+</navigation>

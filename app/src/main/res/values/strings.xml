@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Trip</string>
+    <string name="to_address_hint">To (Address)</string>
+    <string name="please_type_address_hint">Please type address</string>
+    <string name="location_granted">location permission granted</string>
+    <string name="location_denied">location permission denied</string>
+    <string name="location_permission_title">Location Permission Needed</string>
+    <string name="location_permission_message">This app needs the Location permission for automatic address detection</string>
+    <string name="ok_button">OK</string>
+    <string name="location_setting">Location Settings</string>
+    <string name="enable_location">Enable Location</string>
+    <string name="enable_location_message">Your Locations Settings is off.\nPlease enable location to track address</string>
+    <string name="select">select</string>
+    <string name="location">location</string>
+    <string name="from">From</string>
+    <string name="departure_date">Departure Date</string>
+    <string name="time">Time</string>
+    <string name="to">To</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

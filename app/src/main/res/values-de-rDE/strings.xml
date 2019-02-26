@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Reise</string>
+    <string name="to_address_hint">Nach (Adresse)</string>
+    <string name="please_type_address_hint">Bitte geben Sie die Adresse ein</string>
+    <string name="location_granted">location permission zugegeben</string>
+    <string name="location_denied">location permission nicht zugegeben</string>
+    <string name="location_permission_title">location permission brauchen</string>
+    <string name="location_permission_message">Diese App benötigt die Standortberechtigung für die automatische Adresserkennung</string>
+    <string name="ok_button">OK</string>
+    <string name="location_setting">Location Settings</string>
+    <string name="enable_location">Enable Location</string>
+    <string name="enable_location_message">Ihre Standorteinstellungen sind deaktiviert. Bitte aktivieren Sie den Standort, um die Adresse zu verfolgen</string>
+    <string name="select">wahlen</string>
+    <string name="location">location</string>
+    <string name="to">Nach</string>
+    <string name="time">Zeit</string>
+    <string name="departure_date">Abreisedatum</string>
+    <string name="from">Von</string>
+</resources>

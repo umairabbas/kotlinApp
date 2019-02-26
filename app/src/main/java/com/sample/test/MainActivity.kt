@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
         setupNavigation()
     }
 
+    //Navigato
     private fun setupNavigation() {
         val navController = findNavController(R.id.navController)
         setupActionBarWithNavController(navController)

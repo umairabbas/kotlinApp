@@ -6,5 +6,5 @@ object Constants {
     val SUCCESS_RESULT = "SUCCESS_RESULT"
     val SELECTED_ADDRESS = "SELECTED_ADDRESS"
     val baseUrl = "https://maps.googleapis.com"
-    val PLACE_API_KEY = "AIzaSyCXX4WFvj0129k8zIKzyUeDe5D_ofc4YxE"
+    val PLACE_API_KEY = "AIzaSyAoMWqJ4MJhgNvGxC1_ZtELFGYhrRRzA7s"
 }
